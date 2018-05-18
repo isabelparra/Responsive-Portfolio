@@ -31,7 +31,7 @@ h1, h2, h3 {
 }
 
 h2, h3 {
-    font-size: 22px;
+    font-size: 20px;
 }
 
 p:last-child {
@@ -82,6 +82,11 @@ p {
 
 nav {
     float: right;
+    margin-top: 25px;
+
+
+    
+
 }
 
 nav a {
@@ -100,24 +105,25 @@ nav a:first-child {
 /* footer */
 
 footer {
-    background: #666666;
     padding: 30px 0;
+    clear: both;
+    font-size: 12px;
     color: #ffffff;
     color: #ccc;
     text-align: center;
+    background: #666666;
     border-top: 8px solid #4aaaa5;
-    margin: auto;
-    margin-bottom: 0;
-    font-size: 12px;
-    clear: both;
+    height: 50px;
+   
 }
 
 h2, h3 {
-    font-size: 22px;
+    font-size: 32px;
     border-bottom: 2px solid lightgray;
     margin-bottom: 15px;
     padding-bottom: 20px;
     line-height: 22px;
+    font-weight: 300;
 }
 
 /* main */
@@ -136,8 +142,6 @@ h2, h3 {
     margin: 0 0 40px;
     background: #fff;
     border: 1px solid #ddd;
-
-
 }
 
 /* portfolio */
@@ -220,31 +224,62 @@ input[type=submit] {
 
 @media only screen and (max-width: 640px) {
     .container {
-        max-width: 640px;
-    
+        max-width: 600px;
+        margin-left: 24px;
     }
+
+
+  
     header {
         position: static;
-       width: 640px;
-       background: #4aaaa5;
-       text-align: center;
-        font-size: 25px;
-        line-height: 80px;
+        max-width: 640px;
+        background: #4aaaa5;
+        font-size: 12px;
+        line-height: 16px;
         color: #fff;
     }
    #logo {
         width: 640px;
+        text-align: center;
     }
     nav {
-        clear: both;
-        background: white;
         width: 640px;
+        margin-top: 0;
+        text-align: center;
+       
+    }
+    .main-section {
+        width: 600px;
+        
     }
 
-    }
+/* portfolio */
+.work {
+    position: relative;
+    margin: auto;
+}
 }
 
+@media only screen and (max-width: 768px) {
+    .container {
+        max-width: 700px;
+    }
+
+    .main-section {
+       
+    }
+    header {
+        max-width: 768px;
+        background: #4aaaa5;
+        font-size: 12px;
+        line-height: 16px;
+        color: #fff;
+    }
 
 
-
-
+/* portfolio */
+.work {
+    position: relative;
+    margin: auto;
+}
+}
