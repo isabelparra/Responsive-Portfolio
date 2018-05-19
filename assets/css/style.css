@@ -17,7 +17,6 @@ body {
     max-width: 960px;
     margin: 0 auto;
     clear: both;
-
 }
 
 h1, h2, h3, p {
@@ -46,7 +45,6 @@ h1 {
 
 
 /* header */
-
 
 #mastheader {
     position: fixed;
@@ -126,7 +124,7 @@ h2, h3 {
 }
 
 .main-section {
-    float: left;
+    float: right;
     width: 100%;
     max-width: 960px;
     padding: 30px;
@@ -213,21 +211,16 @@ input[type=submit] {
   border: 0 none;
 }
 
-@media only screen and (max-width: 640px) {
-    .container {
-        width: 640px;
-    }
-    header {
-        width: 640px;
-    }
+@media screen and (max-width: 640px) {
 
+/* header */
     #mastheader {
         position: static;
         margin: 0;
         max-width: 640px;
         width: 100%;
-
     }
+
     #logo {
         width: 640px;
         text-align: center;
@@ -238,18 +231,89 @@ input[type=submit] {
         width: 640px;
         margin-top: 0;
         text-align: center; 
+        font-size: 1rem;
+        line-height: 3rem;
     }
 
+    /* wrapper */
+
     #main-container {
-        width: 610px;
+
         margin: 0 auto;
-        padding-top: 20px;
+        padding: 20px;
+        width: 100%;
+    }
+
+    .auth-image {
+        max-width: 100%;
+        height: auto;
+    }
+    .text {
+        width: 100%;
+  
     }
 
 /* portfolio */
+.work img {
+    width: 100%;
+}
+
     .work {
-    position: relative;
-    margin: auto;
-    }
+    width: 100%;
+     }
+
     }
 
+
+    @media only screen and (max-width: 768px) {
+        .container {
+            width: 720px;
+        }
+    
+        nav {
+            float: right;
+            margin-top: 35px;
+           
+        }
+        header {
+            max-width: 768px;
+            background: #4aaaa5;
+            font-size: 12px;
+            line-height: 16px;
+            color: #fff;
+        }
+    
+        
+    
+    /* portfolio */
+    .work {
+        position: relative;
+        margin: auto;
+    }
+    }
+    
+    @media screen and (max-width: 980px) {
+        .container {
+            max-width: 900px;
+        }
+    
+        .main-section {
+           
+        }
+        header {
+            max-width: 980px;
+            background: #4aaaa5;
+            font-size: 12px;
+            line-height: 16px;
+            color: #fff;
+        }
+    
+    
+    /* portfolio */
+    .work {
+        position: relative;
+        margin: auto;
+    }
+    }
+    
+    
